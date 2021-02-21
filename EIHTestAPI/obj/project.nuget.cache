@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AeAOgKwtzA8efOBR8Jner8B1wQ61FlvhpZTCmSgpXAumhqCoB09v2hTbfH8NI6bD52/NYx3Gx+lJ0ApoYNGyMQ==",
+  "dgSpecHash": "Y7GCSHjiAO2Vy5QsX7nEDdVvNVhEto5qwV5eqhD8FuAc7YpRj7NCFqjUTiSBoaWaw1egDm6LeF/m5aEClCOahQ==",
   "success": true,
-  "projectFilePath": "E:\\src\\web_apps\\EIHTestSrc\\EIHTestDemo\\EIHTestAPI\\EIHTest.csproj",
+  "projectFilePath": "E:\\src\\web_apps\\EIHDemo\\EIHDemo\\EIHTestAPI\\EIHTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\krushna\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
     "C:\\Users\\krushna\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.3\\microsoft.aspnetcore.authentication.jwtbearer.5.0.3.nupkg.sha512",

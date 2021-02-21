@@ -40,7 +40,7 @@ namespace EIHTestPortal.Helpers
 
         public User GetUser(string emailaddress)
         {
-            return _userCollection.Find<User>(x => x.EmailAddress == emailaddress).SingleOrDefault();
+            return _userCollection.Find<User>(x => x.EmailAddress.ToLower() == emailaddress.ToLower()).SingleOrDefault();
         }
 
         public void LogException(AppLog msg)

@@ -29,7 +29,7 @@ namespace EIHTest.Helpers
         public bool AddContact(Contact contact)
         {
             //check if contact is already present or  not
-            var is_present=_mongoContext.Contact.Find(x => x.Email == contact.Email).SingleOrDefault();
+            var is_present=_mongoContext.Contact.Find(x => x.Email.ToLower() == contact.Email.ToLower()).SingleOrDefault();
             _log.InfoLog("Adding contact");
             if (is_present == null)
             {

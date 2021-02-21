@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\src\\web_apps\\EIHTestSrc\\EIHTestDemo\\EIHTestAPI\\EIHTest.csproj": {}
+    "E:\\src\\web_apps\\EIHDemo\\EIHDemo\\EIHTestAPI\\EIHTest.csproj": {}
   },
   "projects": {
-    "E:\\src\\web_apps\\EIHTestSrc\\EIHTestDemo\\EIHTestAPI\\EIHTest.csproj": {
+    "E:\\src\\web_apps\\EIHDemo\\EIHDemo\\EIHTestAPI\\EIHTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\src\\web_apps\\EIHTestSrc\\EIHTestDemo\\EIHTestAPI\\EIHTest.csproj",
+        "projectUniqueName": "E:\\src\\web_apps\\EIHDemo\\EIHDemo\\EIHTestAPI\\EIHTest.csproj",
         "projectName": "EIHTest",
-        "projectPath": "E:\\src\\web_apps\\EIHTestSrc\\EIHTestDemo\\EIHTestAPI\\EIHTest.csproj",
+        "projectPath": "E:\\src\\web_apps\\EIHDemo\\EIHDemo\\EIHTestAPI\\EIHTest.csproj",
         "packagesPath": "C:\\Users\\krushna\\.nuget\\packages\\",
-        "outputPath": "E:\\src\\web_apps\\EIHTestSrc\\EIHTestDemo\\EIHTestAPI\\obj\\",
+        "outputPath": "E:\\src\\web_apps\\EIHDemo\\EIHDemo\\EIHTestAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Microsoft\\Xamarin\\NuGet\\",
