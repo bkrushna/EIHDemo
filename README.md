@@ -1,7 +1,7 @@
 # EIHDemo
 
-#EIHTestPortal
-EIHTestportal is web application developed in .net MVC. It is thin ui. 
+# EIHTestPortal
+EIHTestportal is web application developed in .net MVC. It is thin UI. 
 
 Authentication is simple process of authenticating user and password stored in database. Passwords are stored as hash+salt to provide better security aspect. 
 
@@ -14,14 +14,14 @@ Portal calls api exposed by EIHTest to perform above operations
 Portal uses AppLog and User collections to store logs and user information
 
 
-
-#EIHTest
+ 
+# EIHTest
 EIHTest is web api developed on .net core platform. Since .net core platform provides inbuilt funcationlity of DI, it makes developer's life easy.
 Web api uses IUserService, IContactService and ILog interfaces to build logic. 
 
 IUserService provides authorization implementation for API. Client first authenticates itself. On success receives token which it has to pass to all api call as bearer token. Authentication is simple based on userid and password. However at production level it should be handled by api gateway. 
 
-#Database
+# Database
 Mongodb
 
 
