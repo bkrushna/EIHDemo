@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<head>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js" type="text/javascript"></script>
+
+    <script src="~/Scripts/AppJsAndCSS/js/ContactDT.js" type="text/javascript"></script>
+</head>
+
+
+
+<body>
+    <div class="container">
+
+        <div class="form-group">
+            <h2>Contacts</h2>
+        </div>
+
+        <div>
+            <button class="btn btn-success" style="float:right" onclick="add_btn_clicked()">
+                Add Contact
+            </button>
+        </div>
+        <br />
+        <br />
+        <table id="contact_tble" class="display table" style="width:100%">
+
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone number</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var ct in ViewData.Model)
+                {
+                    <tr>
+                        <td>@ct.FirstName</td>
+                        <td>@ct.LastName</td>
+                        <td>@ct.PhoneNumber</td>
+                        <td>@ct.Email</td>
+                        <td>@ct.Status</td>
+                        <td>
+                            <btn class="btn btn-info" onclick="edit_contact(this)" model-param="@ct.Id">
+                                Edit
+                            </btn>
+                            <btn class="btn btn-danger" model-param="@ct.Id" onclick="delete_btn_clicked(this)">
+                                Delete
+                            </btn>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </div>
+
+</body>
+
+
+<div id="popupModalDelete" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Delete </h4>
+            </div>
+            <div class="modal-body">
+                <p> You are about to delete data. Do you really want to proceed?</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="yes_btn" class="btn btn-default btn-danger" data-dismiss="modal" onclick="yes_clicked()">Delete</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div id="popupModalSucess" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Information</h4>
+            </div>
+            <div class="modal-body">
+                <p>Record deleted successfully. Refreshing home page..</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="ok" class="btn btn-default" data-dismiss="modal" onclick="window.location.href='/Contact/Index'">Ok</button>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="popupModalError" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Information</h4>
+            </div>
+            <div class="modal-body">
+                <p id="errorTxt">Error! something went wrong, Please try later..</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="ok" class="btn btn-default" data-dismiss="modal" onclick="">Ok</button>
+
+            </div>
+        </div>
+
+    </div>
+</div>
