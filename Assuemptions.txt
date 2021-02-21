@@ -1,0 +1,5 @@
+Assumptions/Consideration:
+1. Multiple contacts with same email address can't be added. Email ID is unique
+2. For demo purpose it is hosted on HTTP protocol.
+
+ 
