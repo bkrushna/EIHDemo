@@ -17,7 +17,6 @@ Portal uses AppLog and User collections to store logs and user information
 
 #EIHTest
 EIHTest is web api developed on .net core platform. Since .net core platform provides inbuilt funcationlity of DI, it makes developer's life easy.
-Web api exposed api To add contact, edit contact, delete contact and list contacts oeprations.
 Web api uses IUserService, IContactService and ILog interfaces to build logic. 
 
 IUserService provides authorization implementation for API. Client first authenticates itself. On success receives token which it has to pass to all api call as bearer token. Authentication is simple based on userid and password. However at production level it should be handled by api gateway. 
@@ -27,8 +26,12 @@ Mongodb
 
 
 Enviornment
+APi is private and can't be called from outside.
 Solutions are developed in Microsoft visual studio community 2019 version. 
 Solution is deployed at gcp and same build is also uploded github 
+
+http://34.68.111.107/
+
 
 Mongo 3.2 server is used
 
