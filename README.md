@@ -32,6 +32,7 @@ Solution is deployed at gcp and same build is also uploded github
 
 http://34.68.111.107/
 
-
+Userid : demo@demo.com
+password: demo
 Mongo 3.2 server is used
 
